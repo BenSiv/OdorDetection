@@ -40,3 +40,4 @@ from dense_neuralnet import dense_neuralnet
 from MLP import MLP
 from RNN import RNN
 from KNN import KNN
+from random_forest_rfe import random_forest_rfe

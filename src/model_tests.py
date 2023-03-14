@@ -38,8 +38,10 @@ if __name__ == "__main__":
     #     "MLP", "RNN", "KNN"
     # ]
 
-    models = [
-        "logistic_regression", "random_forest", "gradient_boosting", "MLP"
-    ]
+    # models = [
+    #     "logistic_regression", "random_forest", "gradient_boosting", "MLP"
+    # ]
     
+    models = ["random_forest"]
+        
     run_tests(models, preps)
