@@ -34,6 +34,7 @@ from most_common import most_common
 from random_sampler import random_sampler
 from logistic_regression import logistic_regression
 from random_forest import random_forest
+from extra_trees import extra_trees
 from gradient_boosting import gradient_boosting
 from ada_boost import ada_boost
 from dense_neuralnet import dense_neuralnet

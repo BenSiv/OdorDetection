@@ -19,7 +19,7 @@ def main():
     """program skeleton"""
 
     args = get_args()
-    # args = {"clip":False, "derive":True, "scale":False, "reduce":False, "fourier":False, "model":random_forest}
+    # args = {"clip":False, "derive":False, "scale":False, "reduce":False, "fourier":False, "model":random_forest}
 
     # load cleaned data
     labels, features = load_data(PROJECT_DIR)
