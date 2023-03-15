@@ -30,7 +30,8 @@ def run_tests(models, preps):
             os.system(command)
 
 if __name__ == "__main__":
-    preps = ["scale", "clip", "derive", "reduce"]
+    # preps = ["scale", "clip", "derive", "reduce"]
+    preps = []
 
     # models = [
     #     "random_sampler", "logistic_regression", "random_forest",
