@@ -7,6 +7,7 @@ import os
 import sys
 import pickle
 import numpy as np
+import pandas as pd
 
 SCRIPT_PATH = os.path.realpath(__file__)
 
@@ -26,9 +27,14 @@ def main():
     model = pickle.load(best_model_file)
 
     labels, features = load_data(PROJECT_DIR)
-    
+
     random_index = np.random.choice(features.shape[0])
     rand_features = features.iloc[random_index,:]
     rand_label = labels.iloc[random_index,:]
-    
-    model.predict(rand_features.values)
+
+    pred_label = model.predict(pd.DataFrame(rand_features).transpose())
+
+    print(f"True: {rand_label.values[0]}\nPred: {pred_label[0]}")
+
+if __name__ == "__main__":
+    main()
